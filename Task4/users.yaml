@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: user-credentials-config
+  namespace: development
+data:
+  dev-csr-template: |
+    CN=devops
+    O=devops
+  viewer-csr-template: |
+    CN=developer
+    O=developer
